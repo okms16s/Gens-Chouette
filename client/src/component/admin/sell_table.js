@@ -44,7 +44,7 @@ function AdminSellTable() {
       setDisplayData(result.result);
       setTotalPages(result.totalPage);
     } catch (err) {
-      toast.error("");
+      toast.error("サーバー接続時にエラーが発生しました。");
     }
   };
 

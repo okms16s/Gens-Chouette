@@ -175,19 +175,19 @@ export default function ProductModal({ open, setOpen, modalType, value }) {
 
     const handleAddProduct = async () => {
         if (!file && modalType === 'add') {
-            toast.error('failed in file!');
+            toast.error('写真をアップロードしてください');
         } else if (!intro) {
-            toast.error('failed in title');
+            toast.error('はじめにを入力してください。');
         } else if (!type) {
-            toast.error('failed in type');
+            toast.error('カテゴリーを入力してください。');
         } else if (!sex) {
-            toast.error('failed in sex')
+            toast.error('ジェンダーを入力してください。')
         } else if (!matchType) {
-            toast.error('failed in matchType')
+            toast.error('フィットタイプを入力してください。')
         } else if (!casual) {
-            toast.error('failed in casual')
+            toast.error('ライフスタイルを入力してください。')
         } else if (!price) {
-            toast.error('failed in price');
+            toast.error('価格を入力してください。');
         } else {
             if (file) {
                 const data = new FormData();
